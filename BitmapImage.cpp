@@ -18,6 +18,16 @@ bool BitmapImage::load(std::string name) {
     return false;
 }
 
+bool BitmapImage::save(std::string name) {
+    std::string fileEXtention = name.substr(name.find_last_of('.') + 1);
+    if (fileEXtention == "jpg") {
+        //something something
+        //something
+        return true;
+    }
+    return false;
+}
+
 BitmapImage::~BitmapImage() {
     delete[] buffer;
 }

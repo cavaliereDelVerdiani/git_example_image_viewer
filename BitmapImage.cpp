@@ -28,7 +28,7 @@ bool BitmapImage::save(std::string name) {
     return false;
 }
 
-void BitmapImage::(int newWidth, int newHeight) {
+void BitmapImage::resize(int newWidth, int newHeight) {
     width = newWidth;
     height = newHeight;
 }

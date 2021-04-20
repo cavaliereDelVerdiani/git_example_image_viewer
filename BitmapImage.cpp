@@ -1,7 +1,9 @@
 #include "BitmapImage.h"
 
 BitmapImage::BitmapImage() : width(640), height(480) {
-    buffer = new char[width * height * 3];
+    channels = 3;
+    buffer = new int[width * height * channels];
+    depth = 8;
 }
 
 bool BitmapImage::load(std::string name) {
@@ -10,6 +12,7 @@ bool BitmapImage::load(std::string name) {
     if (fileExt == "jpg") {
         // load image file
         // decompress into buffer
+        //more code to handle channels and depth and the existance of birds
         return true;
     }
     return false;

@@ -15,6 +15,11 @@ bool BitmapImage::load(std::string name) {
         //more code to handle channels and depth and the existance of birds
         return true;
     }
+    if (fileExt == "png") {
+        //I'm falling in the quicksand of my thought
+        //and I ain't got the power anymore
+        return true;
+    }
     return false;
 }
 

@@ -11,6 +11,10 @@ public:
 
     bool load(std::string name);
 
+    bool save(std::string name);
+
+    void resize(int newWidth, int newHeight);
+
 private:
     int width, height;
     int *buffer;

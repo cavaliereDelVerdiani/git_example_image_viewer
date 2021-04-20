@@ -28,6 +28,11 @@ bool BitmapImage::save(std::string name) {
     return false;
 }
 
+void BitmapImage::(int newWidth, int newHeight) {
+    width = newWidth;
+    height = newHeight;
+}
+
 BitmapImage::~BitmapImage() {
     delete[] buffer;
 }
